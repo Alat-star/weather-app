@@ -25,7 +25,8 @@ body{
     background-image: url(https://metrospaces.com/wp-content/themes/Custom%20Theme/assets/images/bg-1366.png);
     background-blend-mode: multiply;
     display: grid;
-    font-family: 'Poppins' 
+    font-family: 'Poppins'; 
+    height: 100vh;
 }
 
 form {
@@ -161,6 +162,7 @@ input {
 
 
 .footer {
+    padding-top: 50vmin;
     display: grid;
     justify-self: center;
 }
