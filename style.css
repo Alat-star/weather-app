@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 5vmin;
+}
+
+body{
+    color: #ccc;
+    background-color: #ccc;
+    background-image: url(https://metrospaces.com/wp-content/themes/Custom%20Theme/assets/images/bg-1366.png);
+    background-blend-mode: multiply;
+    display: grid;
+    font-family: 'Poppins' 
+}
+
+form {
+    display: grid;
+    grid-gap: 2vmin;
+    place-items: center;
+}
+
+input {
+    border: none;
+}
+
+
+
+.container-div {
+     display: grid;
+     grid-gap: 20px;
+     justify-content: center;
+     align-content: center;
+}
+
+
+.logo{
+    justify-self: center;
+    max-width: 10vmin;
+}
+
+.head {
+    display: grid;
+}
+
+.head > p {
+    text-align: right;
+    font-size: 3vmin;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.submit {
+    color: #000;
+    background-color: rgb(0, 198, 209);
+    padding: 1vmin;
+    border: none;
+    letter-spacing: .2vmin;
+    border-radius: 1vmin;
+}
+
+
+.weather-div {
+    padding: 20px;
+    margin: 10px;
+    display: grid;
+    grid-gap: 0px 200px;
+    grid-template-columns: 1fr auto 1fr;
+    justify-self: stretch;
+}
+
+.input-div{
+    align-self: center;
+}
+
+.slash-logo{
+    justify-self: center;
+    align-self: center;
+    max-width: 10vmin;
+}
+
+.location-two {
+    display: none;
+}
+
+.result-div {
+    display: grid;
+    grid-gap: 2vmin;
+}
+
+.degree-div {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.degree {
+    color: #fff;
+    font-size: 10vmin;
+    font-weight: bold;
+    letter-spacing: 2vmin;
+}
+
+.description {
+    border-bottom: .5vmin solid rgb(0, 198, 209);
+    font-size: 5vmin;
+    color: #ccc;
+    text-align: right;
+}
+
+.forcast-head {
+    font-size: 5vmin;
+    font-style: italic;
+    letter-spacing: .5vmin;
+    text-align: center;
+}
+
+.forcast-div {
+    display: grid;
+    grid-gap: 2vmin;
+    grid-template-columns: repeat(3, auto);
+}
+
+.forcast-div > div {
+    display: grid;
+    grid-gap: 10px;
+    place-items: center;
+}
+
+.atm,
+.eye,
+.hum {
+    justify-self: center;
+    font-size: 5vmin;
+    color: #fff;
+    border-bottom: none;
+}
+
+.forcast-div > div > p {
+    border-bottom: .3vmin solid rgb(0, 198, 209);
+
+}
+
+
+.footer {
+    display: grid;
+    justify-self: center;
+}
+
+.shokworks-logo {
+    max-width: 19vmin;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+    input {
+        font-size: 5vmin;
+        min-height: 4vmin;
+        padding: 1.8vmin;
+        color: #fff;
+        background-color: transparent;
+        outline: none;
+        outline-style: none;
+        border: none;
+        border-bottom: solid teal .4vmin;
+        
+
+    }
+
+    ::placeholder {
+        color: #fff;
+        text-align: center;
+    }
+
+    form{
+        grid-gap: 5vmin;
+    }
+
+    label {
+        display: none;
+    }
+
+    .location {
+        display: none;
+    }
+
+    .location-two {
+        display: block;
+        font-size: 6vmin;
+        text-transform: uppercase;
+        font-weight: 600;
+        border-top: .4vmin solid #fff;
+        padding-top: 5vmin;
+    }
+
+    .weather-div {
+        justify-content: center;
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
+        place-items: center;
+
+    }
+
+    .slash-logo {
+        display: none;
+       transform: rotate(77deg);
+       max-width: 8vmin;
+    }
+
+    .result-div {
+        place-items: center;
+        justify-content: center;
+    }
+
+
+    .forcast-div > div > i {
+        justify-self: center;
+        font-size: 2vmin;
+    }
+
+    .forcast-div > div > p {
+        border-bottom: .2vmin solid rgb(0, 198, 209);
+    }
+}

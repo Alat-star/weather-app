@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather-app</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c95ef03a6a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="container-div">
+        <div class="logo">
+            <img src="images/ALAT.png" alt="company-logo">
+        </div>
+        <div class="head">
+            <h1>
+                AlatMetro Station
+            </h1>
+            <p class="location">london</p>
+        </div>
+        <div class="weather-div">
+            <div class="input-div">
+                <form class="inputForm" action="#">
+                    <input class="city-text" placeholder="Enter City" required name="location" type="text">
+                    <input type="submit" class="submit">
+                </form>
+            </div>
+            <div class="slash-logo">
+                <img src="https://metrospaces.com/wp-content/themes/Custom%20Theme/assets/images//Línea.svg" alt="slash-logo">
+            </div>
+            <p class="location-two">london</p>
+            <div class="result-div">
+                <div class="degree-div">
+                        <p class="degree">50°C</p>
+                        <p class="description"></p>
+                </div>
+                <p class="forcast-head">W~D</p>
+                <div class="forcast-div">
+                    <div>
+                        <span class="eye">00</span>
+                        <p><i class="fas fa-1x fa-eye"></i> Visibility(km)</p>
+                    </div>
+                    <div>
+                        <span class="hum">00</span>
+                        <p>Humidity(%)</p>
+                    </div>
+                    <div>
+                        <span class="atm">00</span>  
+                        <p>Pressure(hPa)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <h2></h2>
+            <img class="shokworks-logo" src="https://metrospaces.com/wp-content/themes/Custom%20Theme/assets/images/Logo_Shokworks.svg" alt="Shokworks">
+        </div>
+        
+    </div>
+
+    <script src="app.js"></script>
+    
+</body>
+</html>
