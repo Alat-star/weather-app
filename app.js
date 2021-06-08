@@ -39,8 +39,8 @@ function convertVisibility (value) {
 
 
 window.onload = async function staticWeather (url) {
-    url = `http://api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=9b6a665cf23078ccc2e6c533358cc341`;
-    let response = await fetch(url, {mode: 'cors'});
+    url = `https://api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=9b6a665cf23078ccc2e6c533358cc341`;
+    let response = await fetch(url);
     let result = await response.json();
     const tempK = result.main.temp; 
     degree.textContent = convertTemp(tempK);
@@ -58,7 +58,7 @@ window.onload = async function staticWeather (url) {
 
 
 async function getWeather (city) {
-    let url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=9b6a665cf23078ccc2e6c533358cc341`;
+    let url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=9b6a665cf23078ccc2e6c533358cc341`;
     const response = await fetch(url);
     const result = await response.json();
     const data = result;
