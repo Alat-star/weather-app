@@ -13,18 +13,15 @@ const form = document.querySelector('.inputForm');
 
 
 function getResolution () {
-    if (screen.width <= 1000) {
+    if (screen.width <= 1200) {
        
-       return  inputTag.placeholder = 'Enter city';
+      inputTag.placeholder = 'Enter city';
         
-    }
-    else {
-       return inputTag.placeholder = '';
     }
 };
 
 
-getResolution();
+window.onload = getResolution();
 
 function convertTemp (number) {
     let ans = number - 273.15;
@@ -45,6 +42,7 @@ window.onload = async function staticWeather (url) {
     const tempK = result.main.temp; 
     degree.textContent = convertTemp(tempK);
     loc.textContent = `${result.name}, ${result.sys.country}`;
+    mobileLocatn.textContent = `${result.name}, ${result.sys.country}`;
     desc.textContent = result.weather[0].description;
     vision.textContent = convertVisibility(result.visibility);
     humid.textContent = result.main.humidity;
@@ -68,12 +66,11 @@ async function getWeather (city) {
 
 }
 
-// getWeather('california');
-
 function processData (input) {
   const tempK = input.main.temp; 
   degree.textContent = convertTemp(tempK);
   loc.textContent = `${input.name}, ${input.sys.country}`;
+  mobileLocatn.textContent = `${input.name}, ${input.sys.country}`;
   desc.textContent = input.weather[0].description;
   vision.textContent = convertVisibility(input.visibility);
   humid.textContent = input.main.humidity;
@@ -82,7 +79,10 @@ function processData (input) {
 
 
 
-form.addEventListener('submit', () => getWeather(inputTag.value));
+form.addEventListener('submit', () => {
+    getWeather(inputTag.value);
+    inputTag.value = '';
+});
 
 
 

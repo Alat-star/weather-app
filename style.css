@@ -27,17 +27,34 @@ body{
     display: grid;
     font-family: 'Poppins'; 
     height: 100vh;
+    background-repeat: no-repeat;
+    /* background-position: center center; */
+    background-size: cover;
+    /* background-clip: padding-box; */
+    /* background-attachment: fixed; */
 }
 
 form {
     display: grid;
-    grid-gap: 2vmin;
+    grid-gap: 3vmin;
     place-items: center;
 }
 
 input {
+    font-size: 2.5vmin;
     border: none;
+    color: #fff;
+    background-color: transparent;
+    outline: none;
+    outline-style: none;
+    border: none;
+    border-bottom: solid teal .2vmin;
     
+}
+
+::placeholder {
+    color: #ccc
+
 }
 
 .submit {
@@ -173,6 +190,8 @@ input {
 
 
 
+
+
 @media screen and (max-width: 1000px) {
     input {
         font-size: 5vmin;
@@ -190,7 +209,7 @@ input {
 
     ::placeholder {
         color: #fff;
-        text-align: center;
+        text-align: left;
     }
 
     form{
@@ -210,8 +229,6 @@ input {
         font-size: 6vmin;
         text-transform: uppercase;
         font-weight: 600;
-        border-top: .4vmin solid #fff;
-        padding-top: 5vmin;
     }
 
     .weather-div {
@@ -241,5 +258,15 @@ input {
 
     .forcast-div > div > p {
         border-bottom: .2vmin solid rgb(0, 198, 209);
+    }
+
+    .footer {
+        padding-top: 43vmin;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    body{
+        background-repeat: no-repeat;
     }
 }
