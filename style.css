@@ -36,6 +36,11 @@ form {
 
 input {
     border: none;
+    
+}
+
+.submit {
+    cursor: pointer;
 }
 
 

@@ -38,7 +38,6 @@ function convertVisibility (value) {
 
 
 
-
 window.onload = async function staticWeather (url) {
     url = `http://api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=9b6a665cf23078ccc2e6c533358cc341`;
     let response = await fetch(url, {mode: 'cors'});
