@@ -27,7 +27,7 @@ body{
     display: grid;
     font-family: 'Poppins'; 
     height: 100vh;
-    background-repeat: repeat;
+    background-repeat: no-repeat;
     /* background-position: center center; */
     background-size: cover;
     /* background-clip: padding-box; */
@@ -179,7 +179,7 @@ input {
 
 
 .footer {
-    padding-top: 50vmin;
+    padding-top: 10vmin;
     display: grid;
     justify-self: center;
 }
@@ -263,10 +263,15 @@ input {
     .footer {
         padding-top: 25vmin;
     }
+
+    body {
+        background-attachment: fixed;
+    }
 }
 
 @media screen and (max-width: 400px) {
     body{
         background-repeat: no-repeat;
+        background-attachment: scroll;
     }
 }
