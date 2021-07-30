@@ -220,21 +220,17 @@ input {
 .footer {
     padding-top: 10vmin;
     display: grid;
+    grid-gap: .4vmin;
+    grid-template-columns: 1fr auto;
     justify-self: center;
 }
 
 .shokworks-logo {
     font-size: 1.7vmin;
-    display: grid;
-    grid-gap: .2vmin;
-    align-items: center;
-    justify-content: center;
-    grid-auto-flow: column;
-    /* z-index: 2; */
-    max-width: 19vmin;
+   
 }
 
-.shokworks-logo > i {
+.footer > i {
 
     color: #FFD700;
 }
